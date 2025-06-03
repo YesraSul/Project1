@@ -1,0 +1,39 @@
+/* nav.css */
+#nav-wrapper {
+    width: 100%;
+    background-color: #ff8800;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav {
+    width: 1200px;
+    /*margin: 0 auto;*/
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  flex-direction: row-reverse;
+}
+
+#nav #Link{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#nav #Link:hover {
+  background-color: #e67300;
+  transform: scale(1.05);
+}
+
+#nav #Link.active {
+  background-color: #cc6600;
+}
