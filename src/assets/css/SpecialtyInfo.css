@@ -1,0 +1,32 @@
+/* src/assets/css/SpecialtyInfo.css */
+.specialty-info-container {
+    padding: 40px;
+    background-color: #fffaf2;
+  }
+  
+  .specialty-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .specialty-info-container th,
+  .specialty-info-container td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .specialty-info-container button {
+    background-color: #cc3300;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .specialty-info-container button:hover {
+    background-color: #a82b00;
+  }
+  

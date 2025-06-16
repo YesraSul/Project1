@@ -1,43 +1,23 @@
-import React from 'react';
-
-const orangeTheme = {
-  backgroundColor: '#fff5e6',
-  color: '#ff8c00',
-  borderColor: '#ffa64d'
-};
-
-const StudentsPage = ({ users }) => {
-  const students = users?.filter((user) => user.type === 'طالب');
+import '../assets/css/StudentsPage.css';
+const StudentsPage = ({ users = [] }) => {
+  const students = Array.isArray(users)
+    ? users.filter((u) => u.type === 'طالب')
+    : [];
 
   return (
-    <div className="p-4" style={orangeTheme}>
-      <h2 className="text-xl mb-4">بيانات الطلاب</h2>
-      <table className="w-full table-auto border">
+    <div className="students-page">
+      <h2>بيانات الطلاب</h2>
+      <table>
         <thead>
-          <tr>
-            <th className="border p-2">ID</th>
-            <th className="border p-2">الاسم</th>
-            <th className="border p-2">النوع</th>
-          </tr>
+          <tr><th>ID</th><th>الاسم</th><th>النوع</th></tr>
         </thead>
         <tbody>
-          {students && students.length > 0 ? (
-            students.map((student) => (
-              <tr key={student.id}>
-                <td className="border p-2">{student.id}</td>
-                <td className="border p-2">{student.name}</td>
-                <td className="border p-2">{student.type}</td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan="3" className="border p-2 text-center">لا توجد بيانات</td>
-            </tr>
-          )}
+          {students.map((s) => (
+            <tr key={s.id}><td>{s.id}</td><td>{s.name}</td><td>{s.type}</td></tr>
+          ))}
         </tbody>
       </table>
     </div>
   );
 };
-
 export default StudentsPage;

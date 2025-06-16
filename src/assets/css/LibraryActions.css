@@ -1,0 +1,49 @@
+.library-actions-container {
+  padding: 50px 30px;
+  background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 152, 0, 0.3);
+  max-width: 500px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.library-actions-container button {
+  background-color: #ff9800;
+  color: white;
+  padding: 16px 35px;
+  border: none;
+  margin: 12px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(255, 152, 0, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.library-actions-container button:hover {
+  background-color: #ffb74d;
+  box-shadow: 0 10px 25px rgba(255, 183, 77, 0.7);
+  transform: translateY(-3px);
+}
+
+.library-actions-container button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 12px rgba(255, 152, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .library-actions-container {
+    max-width: 90%;
+    padding: 30px 15px;
+  }
+  .library-actions-container button {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+  }
+}

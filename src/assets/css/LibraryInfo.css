@@ -1,0 +1,22 @@
+.library-info-container {
+    padding: 20px;
+    background-color: #fff3e0;
+  }
+  
+  .library-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .library-info-container th,
+  .library-info-container td {
+    border: 1px solid #ffcc80;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .library-info-container th {
+    background-color: #ffe0b2;
+    color: #e65100;
+  }
+  

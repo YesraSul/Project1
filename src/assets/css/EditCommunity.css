@@ -1,0 +1,16 @@
+.edit-community {
+    padding: 20px;
+    background-color: #fffaf0;
+  }
+  
+  .edit-community h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+  }
+  
+  .edit-community form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  

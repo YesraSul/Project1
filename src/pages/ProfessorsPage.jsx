@@ -1,40 +1,22 @@
 import React from 'react';
+import '../assets/css/ProfessorsPage.css';
 
-const orangeTheme = {
-  backgroundColor: '#fff5e6',
-  color: '#ff8c00',
-  borderColor: '#ffa64d'
-};
-
-const ProfessorsPage = ({ users }) => {
-  // Filter only "استاذ" entries
-  const professors = users?.filter((user) => user.type === 'استاذ');
+const ProfessorsPage = ({ users = [] }) => {
+  const professors = Array.isArray(users)
+    ? users.filter((u) => u.type === 'استاذ')
+    : [];
 
   return (
-    <div className="p-4" style={orangeTheme}>
-      <h2 className="text-xl mb-4">بيانات الأساتذة</h2>
-      <table className="w-full table-auto border">
+    <div className="professors-page ">
+      <h2>بيانات الأساتذة</h2>
+      <table>
         <thead>
-          <tr>
-            <th className="border p-2">ID</th>
-            <th className="border p-2">الاسم</th>
-            <th className="border p-2">النوع</th>
-          </tr>
+          <tr><th>ID</th><th>الاسم</th><th>النوع</th></tr>
         </thead>
         <tbody>
-          {professors && professors.length > 0 ? (
-            professors.map((professor) => (
-              <tr key={professor.id}>
-                <td className="border p-2">{professor.id}</td>
-                <td className="border p-2">{professor.name}</td>
-                <td className="border p-2">{professor.type}</td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan="3" className="border p-2 text-center">لا توجد بيانات</td>
-            </tr>
-          )}
+          {professors.map((p) => (
+            <tr key={p.id}><td>{p.id}</td><td>{p.name}</td><td>{p.type}</td></tr>
+          ))}
         </tbody>
       </table>
     </div>

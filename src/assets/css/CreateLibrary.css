@@ -1,0 +1,38 @@
+.create-library-container {
+    padding: 30px;
+    background-color: #fff3e0;
+    border-radius: 10px;
+  }
+  
+  .create-library-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .create-library-form label {
+    font-weight: bold;
+  }
+  
+  .create-library-form input,
+  .create-library-form textarea,
+  .create-library-form select {
+    padding: 10px;
+    border: 1px solid #ffa726;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .create-library-form button {
+    background-color: #fb8c00;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-library-form button:hover {
+    background-color: #ef6c00;
+  }
+  
