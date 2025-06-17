@@ -1,0 +1,141 @@
+/* CommunityPage.css */
+
+body {
+  font-family: 'Cairo', sans-serif; /* Optional: Good for Arabic text */
+  direction: rtl; /* Right-to-left layout */
+  background-color: #fffaf0; /* Light orange background */
+}
+
+/* Page container */
+.community-page {
+  padding: 1.5rem;
+  background-color: #fff7ed;
+  min-height: 100vh;
+}
+
+/* Header */
+.community-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d97706;
+  margin-bottom: 1rem;
+}
+
+/* Filter dropdown */
+.community-filter select {
+  width: 16rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+/* Community buttons */
+.community-card {
+  background-color: white;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.community-card:hover {
+  background-color: #ffedd5;
+}
+
+/* Create button */
+.create-button {
+  background-color: #fdba74;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #fb923c;
+}
+
+/* Create form */
+.create-form {
+  margin-top: 1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Post section */
+.community-post {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+}
+
+.comment-box {
+  background-color: #ffedd5;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.send-button {
+  background-color: #fb923c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+
+/* Universal input styling */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #e2e8f0; /* light gray */
+  border-radius: 0.75rem;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #fb923c; /* orange-400 */
+  box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.2); /* soft glow */
+}
+
+/* Placeholder style */
+input::placeholder,
+textarea::placeholder {
+  color: #a0aec0; /* soft gray */
+}
+
+/* Send button specific style */
+.send-button {
+  background-color: #fb923c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background-color: #f97316;
+}

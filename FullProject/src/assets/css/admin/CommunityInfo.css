@@ -1,0 +1,26 @@
+.community-info {
+    padding: 20px;
+    background-color: #fef7ec;
+  }
+  
+  .community-info h2 {
+    color: #ff8c00;
+    margin-bottom: 15px;
+  }
+  
+  .community-info table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .community-info th, td {
+    border: 1px solid #ffa64d;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .community-info th {
+    background-color: #fff0e0;
+  }
+  

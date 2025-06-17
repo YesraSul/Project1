@@ -1,0 +1,19 @@
+/* src/assets/css/SubjectInfo.css */
+.subject-info-container {
+    padding: 40px;
+    background-color: #fffaf2;
+  }
+  
+  .subject-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .subject-info-container th,
+  .subject-info-container td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  

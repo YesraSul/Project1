@@ -1,0 +1,27 @@
+.create-community-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fffaf0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-container button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}

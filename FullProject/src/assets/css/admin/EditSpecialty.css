@@ -1,0 +1,33 @@
+/* src/assets/css/EditSpecialty.css */
+.edit-specialty-container {
+    padding: 40px;
+    background-color: #fff9f0;
+  }
+  
+  .specialty-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+  }
+  
+  .specialty-form input,
+  .specialty-form textarea {
+    padding: 10px;
+    border: 1px solid #ff8800;
+    border-radius: 5px;
+  }
+  
+  .specialty-form button {
+    background-color: #ff8800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .specialty-form button:hover {
+    background-color: #e67300;
+  }
+  

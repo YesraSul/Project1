@@ -1,0 +1,60 @@
+.community-view {
+    padding: 20px;
+    background-color: #fffaf0;
+    color: #333;
+  }
+  
+  .community-view h2 {
+    color: #ff8c00;
+    margin-bottom: 15px;
+  }
+  
+  .community-view .post {
+    border: 1px solid #ffa64d;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff5e6;
+    border-radius: 8px;
+  }
+  
+  .community-view .comment-section {
+    margin-top: 20px;
+  }
+  
+  .community-view textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ffa64d;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .community-view button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .community-view button:hover {
+    background-color: #e67300;
+  }
+  
+  .community-view .like-button {
+    margin-top: 10px;
+    background-color: #ffc04d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .community-view .like-button:hover {
+    background-color: #ffa64d;
+  }
+  
